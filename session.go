@@ -22,7 +22,7 @@ func secret(w http.ResponseWriter, r *http.Request) {
 	}
 
 	// Print secret message
-	fmt.Fprintln(w, "The cake is a lie!")
+	fmt.Fprintln(w, "You grant to access this page, bravo")
 }
 
 func login(w http.ResponseWriter, r *http.Request) {
