@@ -17,6 +17,6 @@ func main() {
 		}
 	})
 
-	fmt.Println("server started at localhost:9000")
+	fmt.Println("server started at localhost")
 	http.ListenAndServe(":80", nil)
 }
