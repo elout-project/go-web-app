@@ -9,7 +9,8 @@ import (
 )
 
 func main() {
-	// // Routing
+
+	// // Simple routing Routing
 	// http.HandleFunc("/", handler.Index)
 	// http.HandleFunc("/about", handler.About)
 	// // http.HandleFunc("/salah", salah.Salah)
