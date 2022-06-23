@@ -10,7 +10,7 @@ import (
 
 func logging(f http.HandlerFunc) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
-		// your middleware code  start her
+		// your middleware code  start here
 		log.Println(r.URL.Path)
 		// your code end
 		f(w, r)
@@ -29,5 +29,6 @@ func main() {
 	http.HandleFunc("/foo", logging(foo))
 	http.HandleFunc("/bar", logging(bar))
 
+	// Start server
 	http.ListenAndServe(":80", nil)
 }
